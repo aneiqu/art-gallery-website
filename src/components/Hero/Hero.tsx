@@ -18,13 +18,15 @@ export default function Hero() {
         The arts in the collection of the Modern Art Gallery all started from a spark of
         inspiration. Will these pieces inspire you? Visit us and find out.
       </p>
-      <div className='flex px-4'>
-        <div className='bg-almostBlack py-6 px-8 w-fit'>
-          <p className='fontShoulderExtraBold text-xl text-white '>OUR LOCATION</p>
-        </div>
-        <div className='bg-gold p-6 w-fit'>
-          <img src={arrowRight} className='w-2 h-6'></img>
-        </div>
+      <div className='px-4'>
+        <a className='flex' href='/location'>
+          <div className='bg-almostBlack py-6 px-8 w-fit'>
+            <p className='fontShoulderExtraBold text-xl text-white'>OUR LOCATION</p>
+          </div>
+          <div className='bg-gold p-6 w-fit'>
+            <img src={arrowRight} className='w-2 h-6'></img>
+          </div>
+        </a>
       </div>
     </div>
   );

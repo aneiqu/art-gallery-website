@@ -8,7 +8,7 @@ export default function App() {
     <div className='flex flex-col space-y-[7.5rem]'>
       <Hero />
       <GalleryShowcase />
-      <Footer />
+      <Footer color='almostBlack' />
     </div>
   );
 }
