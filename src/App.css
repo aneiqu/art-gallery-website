@@ -1,3 +1,64 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@font-face {
+  font-family: BigShouldersDisplay;
+  src: url("./assets/fonts/BigShouldersDisplay/static/BigShouldersDisplay-Black.ttf")
+    format(truetype);
+}
+@font-face {
+  font-family: BigShouldersDisplayExtraBold;
+  src: url("./assets/fonts/BigShouldersDisplay/static/BigShouldersDisplay-ExtraBold.ttf")
+    format(truetype);
+}
+
+@font-face {
+  font-family: Outfit;
+  src: url("./assets/fonts/Outfit/Outfit-VariableFont_wght.ttf") format(truetype);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: BigShouldersDisplay;
+}
+
+.fontShoulderExtraBold {
+  font-family: BigShouldersDisplayExtraBold;
+  letter-spacing: 0.2275rem;
+}
+
+.headingXL,
+.headingL,
+.headingM,
+.headingS {
+  font-family: BigShouldersDisplay;
+}
+
+.bodyM,
+.bodyS {
+  font-family: Outfit;
+}
+
+.headingXL {
+  font-size: 6rem;
+  line-height: 5.5rem;
+}
+.headingL {
+  font-size: 4.375rem;
+  line-height: 4.375rem;
+}
+.headingM {
+  font-size: 3.75rem;
+  line-height: 3.125rem;
+}
+.headingS {
+  font-size: 2.25rem;
+  line-height: 2.25rem;
+}
+
+.bodyM {
+  font-size: 1.375rem;
+  line-height: 2rem;
+}
+.bodyS {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}

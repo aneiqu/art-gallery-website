@@ -4,17 +4,17 @@ import heroIMGMobile from "../../assets/mobile/image-hero.jpg";
 import heroIMGTablet from "../../assets/tablet/image-hero.jpg";
 export default function Hero() {
   return (
-    <div className='space-y-8 md:flex'>
-      <picture className='md:absolute'>
+    <div className='space-y-8 md:flex items-center'>
+      <picture className='md:flex-shrink-0'>
         <source media='(min-width: 376px)' srcSet={heroIMGTablet} />
         <source media='(min-width: 769px)' srcSet={heroIMGDesktop} />
         <img src={heroIMGMobile} />
       </picture>
-      <div className='md:z-10 md:flex md:flex-col md:gap-12 md:py-[9.0625rem] md:ml-auto md:mr-10 w-1/2'>
-        <h1 className='headingM uppercase px-4 md:px-0'>
+      <div className='space-y-8 md:space-y-12 md:absolute md:max-w-[44%] right-10'>
+        <h1 className='headingM md:text-[4.375rem] md:leading-[4.0625rem] uppercase px-4 md:px-0'>
           MODERN <br /> ART GALLERY
         </h1>
-        <p className='bodyS px-4 md:px-0'>
+        <p className='bodyS px-4 md:px-0 text-darkGray font-light'>
           The arts in the collection of the Modern Art Gallery all started from a spark of
           inspiration. Will these pieces inspire you? Visit us and find out.
         </p>
