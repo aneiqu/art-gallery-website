@@ -39,7 +39,7 @@ export default function GalleryShowcase() {
             <source media='(min-width: 769px)' srcSet={imageGrid3Desktop} />
             <img src={imageGrid3Mobile} />
           </picture>
-          <div className='bg-almostBlack px-6 py-12 flex flex-col gap-6'>
+          <div className='bg-almostBlack px-6 py-12 md:px-[1.75rem] md:py-[5.3125rem] flex flex-col gap-6'>
             <h2 className='text-[3.125rem] leading-[2.8125rem] text-white'>COME & BE INSPIRED</h2>
             <p className='bodyS text-white'>
               We’re excited to welcome you to our gallery and see how our collections influence you.

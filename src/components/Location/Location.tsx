@@ -1,13 +1,20 @@
+import { Icon } from "leaflet";
 import "leaflet/dist/leaflet.css";
 import { MapContainer, Marker, TileLayer } from "react-leaflet";
 import arrowLeft from "../../assets/icon-arrow-left.svg";
+import iconLocation from "../../assets/icon-location.svg";
 import Footer from "../Footer/Footer";
 import "./Location.css";
 
 export default function Location() {
+  const themeLocationIcon = new Icon({
+    iconUrl: iconLocation,
+    iconSize: [66, 88],
+    iconAnchor: [33, 88],
+  });
   return (
     <div>
-      <a href='/' className='flex absolute z-[2]'>
+      <a href='/' className='flex absolute z-[2] md:ml-[2.4375rem]'>
         <div className='bg-gold p-6 w-fit'>
           <img src={arrowLeft} className='w-2 h-6'></img>
         </div>
@@ -20,9 +27,9 @@ export default function Location() {
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
         />
-        <Marker position={[41.48, -71.311]}></Marker>
+        <Marker icon={themeLocationIcon} position={[41.48, -71.311]}></Marker>
       </MapContainer>
-      <div className='flex flex-col gap-12 px-4 py-12 bg-almostBlack'>
+      <div className='flex flex-col md:flex-row gap-12 md:gap-[4.25rem] px-4 md:px-[2.4375rem] md:pt-[5.5rem] md:pb-[5rem] py-12 bg-almostBlack'>
         <h2 className='text-[3.125rem] leading-[2.8125rem] text-white'>OUR LOCATION</h2>
 
         <div className='flex flex-col space-y-5'>
