@@ -6,12 +6,9 @@ This is a solution to the [Art gallery website challenge on Frontend Mentor](htt
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  <!-- - [Screenshot](#screenshot) -->
   - [Links](#links)
   - [Built with](#built-with)
 - [Author](#author)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -22,10 +19,6 @@ Users should be able to:
 - View the optimal layout for each page depending on their device's screen size
 - See hover states for all interactive elements throughout the site
 - **Bonus**: Use [Leaflet JS](https://leafletjs.com/) to create an interactive location map with custom location pin
-
-### Screenshot
-
-<!-- ![](./screenshot.jpg) -->
 
 ### Links
 

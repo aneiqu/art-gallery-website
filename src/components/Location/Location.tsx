@@ -14,7 +14,7 @@ export default function Location() {
   });
   return (
     <div>
-      <a href='/' className='flex absolute z-[2] md:ml-[2.4375rem]'>
+      <a href='/' className='flex absolute z-[2] md:ml-[2.4375rem] xl:ml-[9.75rem]'>
         <div className='bg-gold p-6 w-fit'>
           <img src={arrowLeft} className='w-2 h-6'></img>
         </div>
@@ -29,10 +29,12 @@ export default function Location() {
         />
         <Marker icon={themeLocationIcon} position={[41.48, -71.311]}></Marker>
       </MapContainer>
-      <div className='flex flex-col md:flex-row gap-12 md:gap-[4.25rem] px-4 md:px-[2.4375rem] md:pt-[5.5rem] md:pb-[5rem] py-12 bg-almostBlack'>
-        <h2 className='text-[3.125rem] leading-[2.8125rem] text-white'>OUR LOCATION</h2>
+      <div className='flex flex-col md:flex-row gap-12 md:gap-[4.25rem] px-4 md:px-[2.4375rem] md:pt-[5.5rem] md:pb-[5rem] py-12 lg:px-[10.3125rem] lg:py-[6.5rem] bg-almostBlack lg:justify-between'>
+        <h2 className='text-[3.125rem] leading-[2.8125rem] lg:text-[4.375rem] lg:leading-[4.375rem] text-white lg:w-1/4'>
+          OUR LOCATION
+        </h2>
 
-        <div className='flex flex-col space-y-5'>
+        <div className='flex flex-col space-y-5 lg:w-1/2'>
           <h3 className='text-[2rem] leading-[2rem] text-gold'>99 King Street</h3>
           <p className='bodyS text-white'>
             Newport <br /> RI 02840 <br /> United States of America

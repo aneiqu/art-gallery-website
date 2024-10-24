@@ -7,13 +7,13 @@ import logoLight from "../../assets/logo-light.svg";
 export default function Footer({ color }: { color: string }) {
   return (
     <div
-      className={`px-8 md:px-[2.4375rem] py-12 md:py-[3.5rem] flex flex-col md:flex-row space-y-9 md:space-y-0 justify-between ${
+      className={`px-8 md:px-[2.4375rem] py-12 md:py-[3.5rem] lg:px-[10.3125rem] lg:py-20 flex flex-col md:flex-row space-y-9 md:space-y-0 justify-between ${
         color === "almostBlack" ? "bg-almostBlack" : "bg-gold"
       }`}
     >
       <img
         src={color === "almostBlack" ? logoLight : logoDark}
-        className='w-[6.875rem] h-[2.5rem]'
+        className='w-[6.875rem] h-[2.5rem] lg:w-[10rem] lg:h-[3.625rem]'
       />
       <p
         className={`bodyS font-light md:w-5/12 ${

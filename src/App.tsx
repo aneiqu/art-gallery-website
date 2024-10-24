@@ -5,7 +5,7 @@ import Hero from "./components/Hero/Hero";
 
 export default function App() {
   return (
-    <div className='flex flex-col space-y-[7.5rem]'>
+    <div className='flex flex-col space-y-[7.5rem] lg:space-y-[11.25rem]'>
       <Hero />
       <GalleryShowcase />
       <Footer color='almostBlack' />
